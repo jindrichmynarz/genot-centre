@@ -11,13 +11,22 @@
   [:svg {:width 0 :height 0}
    [:filter#displace
     [:feTurbulence {:type "turbulence"
-                    :baseFrequency 0.02 
-                    :numOctaves 5}]
+                    :baseFrequency (rand-nth
+                                     (range 0.01
+                                            0.03
+                                            0.001))
+                    :numOctaves (rand-nth
+                                  (range 3 6 1))}]
     [:feDisplacementMap {:in "SourceGraphic"
-                         :scale 35}]]])
+                         :scale (rand-nth
+                                  (range 25 45 5))}]]])
+
+(defn- genot
+  []
+  [:h1 (mutate-text "gen♡t centre")])
 
 (defn home-page []
-  [:main displace [:h1 (mutate-text "gen♡t centre")]])
+  [:main displace [genot]])
 
 ;; -------------------------
 ;; Initialize app
