@@ -1,6 +1,6 @@
 # Live coding CSS with Genot Centre
 
-A demo of live coding CSS with [Genot Centre](http://genot.cz) (check out the [music](https://genot.bandcamp.com) they put out). The demo is available at <https://mynarz.net/genot-centre>. A video of the live coding is [here](https://youtu.be/IIJjkrmey5M).
+A demo of live coding CSS with [Genot Centre](http://genot.cz) (check out the [music](https://genot.bandcamp.com) they put out). The demo is available at <https://mynarz.net/genot-centre>. A video of the live coding is [here](https://www.youtube.com/watch?v=QL4YrDpBhAA).
 
 If you want to play along, clone this repository, start Figwheel by running `lein figwheel`, and live edit CSS file in `public/css/site.css`.
 
